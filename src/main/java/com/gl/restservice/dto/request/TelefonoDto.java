@@ -6,17 +6,14 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
-
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Person {
+public class TelefonoDto {
 
-    private String email;
-    private String name;
-    private String password;
-    private List<Phone> phones;
+    private String cityCode;
+    private String countryCode;
+    private String number;
 
 }

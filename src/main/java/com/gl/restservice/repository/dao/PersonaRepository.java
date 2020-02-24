@@ -9,6 +9,6 @@ import java.util.Optional;
 @Repository
 public interface PersonaRepository extends CrudRepository<PersonaEntity, Long> {
 
-    Optional<PersonaEntity> findById(Long id);
+    PersonaEntity findByName(String name);
 
 }

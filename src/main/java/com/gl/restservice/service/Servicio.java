@@ -1,6 +1,8 @@
 package com.gl.restservice.service;
 
-public interface Servicio {
+import com.gl.restservice.dto.request.PersonaDto;
+import com.gl.restservice.dto.response.ResponseDto;
 
-    void insertarPersona();
+public interface Servicio {
+    ResponseDto persistirPersona(PersonaDto personaDto);
 }
